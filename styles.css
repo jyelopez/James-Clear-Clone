@@ -1,0 +1,207 @@
+html body {
+    height: 2000px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* psudeo position */
+a {
+    color: #000000; /* Set the link color */
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Position for the pseudo-element */
+}
+
+a::after {
+    content: ''; /* Create an empty content */
+    position: absolute; /* Position relative to the link */
+    left: 0;
+    bottom: 0;
+    width: 0%; /* Initially hidden */
+    height: 2px; /* Height of the underline */
+    background-color: #acacac; /* Color of the underline */
+    
+}
+
+/* Hover state */
+a:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+
+main {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 500px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 150%;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 20px;
+}
+
+.landingpicture {
+    display: flex;
+    justify-content: center;
+}
+
+.landingpicture img {
+    width: 500px;
+    
+}
+
+.lp {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lp p {
+    font-size: 150%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.freechapter {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.freechapter button {
+    transition: transform 0.3s;
+}
+
+.freechapter button:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    background-color: #fcd388;
+    border-color: #fcd388;
+}
+
+.freechapter button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-color:  #ecae3a;
+    border-style:solid;
+    background-color: #ecae3a;
+}
+.freechapter input{
+    text-align: center;
+    border-color:  #ecae3a;
+    border-style:solid;
+}
+
+.pl {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pl p {
+    text-align: center;
+    padding: 100px;
+    font-size: 130%;
+}
+
+.two-columns-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 600px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 100px;
+    border-right: 1px solid grey;
+}
+
+.div1 p {
+    font-size: 150%;
+}
+.div2 p {
+    font-size: 150%;
+}
+.div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.line1 {
+    border-top: 1px solid grey;
+    width: 100%;
+}
+
+.line2 {
+    border-top: 1px solid grey;
+}
+
+.atoms-app img{
+    width: 80%;
+    padding-top: 100px;
+    padding-right: 100px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 600px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+    padding-right: 50px;
+}
+.text button {
+    height: 40px;
+    width: 100px;
+}
+
+.text button {
+    transition: transform 0.3s;
+}
+
+.text button:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    background-color: #fcd388;
+    border-color: #fcd388;
+}
+
+.text button {
+
+    border-color:  #ecae3a;
+    border-style:solid;
+    background-color: #ecae3a;
+}
